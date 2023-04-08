@@ -1,0 +1,385 @@
+*
+  box-sizing: border-box
+  margin: 0
+  border: 0
+  padding: 0
+  text-decoration: none
+  list-style-type: none
+
+body
+  font-family: 'Open Sans', sans-serif
+  background: #F0EFE2
+  color: #000
+
+.Page
+  margin: 1% 15%
+
+.Card
+  display: flex
+  flex-direction: column
+  background: #fff
+  padding: 10px
+  border: 1px solid #c7c3c3
+
+.Name_New_Order
+  display: flex
+  justify-content: space-between
+  border-bottom: 1px solid #000000
+  padding: 0px 0px 10px
+  align-items: center
+
+.Name_Info
+  display: flex
+  column-gap: 5px
+  padding: 5px 0
+  color: #333333
+
+.User_Info
+  flex: 3
+  background: #EDF5FF
+  padding: 8px
+
+.User_Avatar
+  background: #EDF5FF
+  display: flex
+  flex-direction: column
+  padding: 10px
+  align-items: center
+  flex: 1
+
+.User_Avatar_Icon
+  flex: 2
+  display: flex
+  align-items: center
+
+.User_Sex_Age
+  font: 10px/11px Arial
+
+.User_Activity
+  flex: 7
+  display: flex
+  flex-direction: column
+  text-align: center
+
+.User_Activity_Title
+  background: #EDF5FF
+
+.User_Activity_SMS_Title
+  font-size: 10px
+  line-height: 14px
+  padding: 3px 0
+
+.User_SMS_Status
+  flex: 3
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  text-align: center
+  background: #EDFFED
+
+.User_Avatar img
+  width: 50px
+  height: 50px
+  border-radius: 50%
+
+.User_Activity_info
+  display: flex
+  flex: 3
+  column-gap: 2px
+
+.User_Activity_info_Status
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  flex: 1
+  background: #EDF5FF
+
+.Activity_SMS_Count
+  font-weight: 600
+  font-size: 50px
+  line-height: 68px
+
+.Bottom_Title
+  background: rgba(0, 0, 0, 0.094)
+  font-size: 10px
+  line-height: 14px
+  padding: 3px 0
+
+.Order_Button
+  background: #404040
+  border-radius: 4px
+  color: white
+  height: 40px
+  width: 200px
+
+  &:hover
+    background: #979797
+    height: 41px
+    width: 202px
+
+.Name
+  display: flex
+  align-items: center
+  column-gap: 15px
+
+  p
+    font-weight: 600
+    font-size: 25px
+    font-family: 'Open Sans'
+
+  img
+    height: 100%
+    width: 100%
+
+  figure
+    width: 25px
+    height: 25pzz
+
+.user-info
+  display: flex
+  flex-direction: column
+  gap: 10px
+
+.info-item
+  display: flex
+  align-items: center
+  gap: 10px
+
+.info-icon
+  width: 20px
+  height: 20px
+  background-image: url("contact_icons.png")
+  background-repeat: no-repeat
+
+.icon-id
+  background-position: 0 -1
+
+.icon-phone
+  background-position: 0 -23px
+
+.icon-telephone
+  background-position: 0 -47px
+
+.icon-fax
+  background-position: 0 -72px
+
+.icon-email
+  background-position: 0 -92px
+
+.info-text
+  font-size: 12px
+  line-height: 17px
+
+.Tabs
+  display: flex
+  background: #F2F2F2
+  height: 80px
+  border-bottom: #3A3A3A 2px solid
+  border-top: #c7c5c5 2px solid
+  align-items: flex-end
+  justify-content: center
+
+.Tab
+  background: #D2D2D2
+  display: flex
+  color: #fff
+  font: normal normal bold 12px/14px Arial
+  height: 40px
+  width: 165px
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  margin: 0 1px
+
+  &:hover
+    background: #b1aeae
+
+.active
+  background: #3A3A3A
+
+  &:hover
+    background: #5a5959
+
+.Sub_Tabs_Bar
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  position: relative
+  background: #7D869A
+  padding: 8px 0
+  z-index: 1
+  margin-top: 1px
+
+.Sub_Tabs
+  position: relative
+  z-index: 2
+  display: flex
+  justify-content: flex-start
+  font: normal normal normal 10px/11px Arial
+  margin-left: 10px
+  align-items: center
+  column-gap: 5px
+
+.Sub_Tabs_Title
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  z-index: 1
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  margin: auto
+  font-size: 16px
+  line-height: 22px
+  color: #FFFFFF
+
+.Sub_Tab
+  color: #fff
+  padding: 5px 15px
+
+.active_sub
+  background: #FFFFFF
+  border-radius: 11px
+  color: black
+
+@keyframes loader
+  0%
+    transform: rotate(0deg)
+
+  100%
+    transform: rotate(360deg)
+
+.loader
+  border: 5px solid #f3f3f3
+  border-top: 5px solid #3498db
+  border-radius: 50%
+  width: 50px
+  height: 50px
+  animation: spin 2s linear infinite
+
+@keyframes spin
+  0%
+    transform: rotate(0deg)
+
+  100%
+    transform: rotate(360deg)
+
+.No_Item
+  background: #FAFAFA
+  display: flex
+  height: 200px
+  align-items: center
+  justify-content: center
+
+.Order_Table
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.Order_Table_Row
+  padding: 10px 20px
+  height: 70px
+
+  &:nth-child(odd)
+    background-color: #F2F4F7
+    border-bottom: 1px solid #8a8c8d
+    border-top: 1px solid #8a8c8d
+
+.Order_Table_Row_Subject
+  flex: 1
+
+.Order_Table_Row_Date
+  flex: 0 0 15%
+
+.Order_Table_Row_Communication_Type, .Order_Table_Row_Order_Number
+  flex: 0 0 20%
+
+.Order_Table_Row_Resend
+  flex: 0 0 10%
+
+  span
+    font: normal normal normal 12px/14px Arial
+    background: #7D869A
+    color: #FFFFFF
+    text-align: center
+    padding: 5px 19px
+    border-radius: 3px
+
+    &:hover
+      background: black
+
+.Order_Table_Header, .Order_Table_Row
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  background-color: #FFFFFF
+  font: normal normal normal 10px/11px Arial
+
+.Order_Table_Header
+  padding: 5px 20px
+  border-bottom: 1px solid #cecece
+
+.Order_Table_Row_Date
+  display: flex
+  flex-direction: column
+  row-gap: 4px
+
+.Order_Table_Row_Subject
+  display: flex
+  flex-direction: column
+  row-gap: 4px
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+
+.Order_Table_Row_Communication_Type
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+
+.Order_Table_Row_Date span:nth-child(1), .Order_Table_Row_Subject span:nth-child(1)
+  font: normal normal normal 16px/22px Open Sans
+  color: #333333
+
+.Order_Table_Row_Date span:nth-child(2), .Order_Table_Row_Subject span:nth-child(2)
+  font: normal normal normal 14px/19px Open Sans
+
+.Order_Table_Row
+  .Order_Table_Row_Communication_Type, .Order_Table_Row_Order_Number
+    font: normal normal normal 14px/19px Open Sans
+
+.Overlay
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgb(0 0 0 / 65%)
+  z-index: 9999
+  display: flex
+  justify-content: center
+  align-items: center
+  backdrop-filter: blur(5px)
+
+.Loader
+  border-top: 4px solid #f3f3f3
+  border-right: 4px solid #f3f3f3
+  border-bottom: 4px solid #f3f3f3
+  border-left: 4px solid #3498db
+  border-radius: 50%
+  width: 30px
+  height: 30px
+  animation: loader 2s linear infinite
+  margin: 0 auto
+
+.Close_Button
+  position: absolute
+  top: 0
+  right: 0
+  padding: 10px
+  color: white
+  font-size: 24px
+  cursor: pointer
